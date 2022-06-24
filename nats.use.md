@@ -3,8 +3,8 @@
 sudo docker run --net=host  --name nats-server -tid nats:latest
 
 ```
-
-### create a subscriber
+### Pub/Sub Walkthrough
+##### create a subscriber
 ```shell
 nats sub 'msg.test'
 ```
@@ -18,7 +18,7 @@ nats sub 'msg.test.>'
 nats sub 'msg.*.hello.>'
 ```
 
-### create a publisher  
+##### create a publisher  
 ```shell
 nats pub msg.test hello
 ```
