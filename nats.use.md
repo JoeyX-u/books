@@ -49,3 +49,25 @@ nats reply help.please 'OK, I CAN HELP!!!'
 
 >If all subscribers subscribe to the same topic, If all subscribers subscribe to the same topic, one of them will receive the message.
 >If the subscriber dies, the message cannot be sent.
+
+### Queue Groups
+##### Start the first member of the queue group
+```shell
+nats reply foo "service instance A Reply# {{Count}}"
+```
+##### Start the second member of the queue group
+```shell
+nats reply foo "service instance B Reply# {{Count}}"
+```
+##### Start the third  member of the queue group
+```shell
+nats reply foo "service instance C Reply# {{Count}}"
+```
+
+##### Publish a NATS message
+```shell
+nats request foo "Simple request"
+```
+
+>If all subscribers subscribe to the same topic, If all subscribers subscribe to the same topic, one of them will receive the message.
+>If the subscriber dies, the message cannot be sent.
