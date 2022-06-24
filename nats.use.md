@@ -32,4 +32,4 @@ nats pub msg.test.hello.world hello
 nats pub msg.test.hello.world.one hello
 ```
 
-All subscribers will receive the message
+If all subscribers subscribe to the same topic, they will receive the message
