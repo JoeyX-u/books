@@ -32,5 +32,5 @@ nats pub msg.test.hello.world hello
 nats pub msg.test.hello.world.one hello
 ```
 
-If all subscribers subscribe to the same topic, they will receive the message.
-If subscribers is die,the message will disappear.
+>If all subscribers subscribe to the same topic, they will receive the message.
+>If subscribers is die,the message will disappear.
