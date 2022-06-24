@@ -1,6 +1,6 @@
-### run nats-server
+### run nats-server and enable JetStream
 ```shell
-sudo docker run --net=host  --name nats-server -tid nats:latest
+sudo docker run --net=host  --name nats-server -tid nats:latest -js
 
 ```
 ### Pub/Sub Walkthrough
