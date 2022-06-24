@@ -68,6 +68,9 @@ nats reply foo "service instance C Reply# {{Count}}"
 ```shell
 nats request foo "Simple request"
 ```
-
+##### Publish another message
+```shell
+nats pub foo "Another simple request"
+```
 >If all subscribers subscribe to the same topic, If all subscribers subscribe to the same topic, one of them will receive the message.
 >If the subscriber dies, the message cannot be sent.
