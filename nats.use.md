@@ -44,7 +44,7 @@ nats reply help.please 'OK, I CAN HELP!!!'
 
 ##### run the request client
 ```shell
-nats reply help.please 'OK, I CAN HELP!!!'
+nats request help.please 'I need help!'
 ```
 
 >If all subscribers subscribe to the same topic, If all subscribers subscribe to the same topic, one of them will receive the message.
