@@ -32,3 +32,4 @@ nats pub msg.test.hello.world hello
 nats pub msg.test.hello.world.one hello
 ```
 
+All subscribers will receive the message
